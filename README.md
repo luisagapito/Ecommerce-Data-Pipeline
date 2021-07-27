@@ -70,7 +70,7 @@ There were found a few quality issues exploring these three datasets:
 
 It is a star schema that consists of three-dimensional tables and one fact table. The fact table is "Product Sales" and the dimensional tables are "Time", "Products" and "Users". 
 
-<img src="data model.png">
+<img src="images/data model.png">
 
 This star schema was chosen because of its benefits:
 
@@ -89,7 +89,7 @@ The Data pipelines consist of multiple steps:
     3. Then, it creates a star schema after cleaning and filtering so the analytics team can analyze eCommerce purchases. 
     4. Business users can connect dashboards to these tables, so they can obtain actionable insights to improve revenue in the company.
 
-<img src="Udacity DE capstone project.png">
+<img src="images/Udacity DE capstone project.png">
 
 
 ## Step 4: Run Pipelines to Model the Data
@@ -110,7 +110,7 @@ There was implemented three quality checks were in the code:
 
 It is included a data dictionary with all fields in the star schema.
 
-<img src="data dictionary.png">
+<img src="images/data dictionary.png">
 
 ## Step 5: Run Pipelines to Model the Data
 
