@@ -107,8 +107,11 @@ It is built in the Airflow folder.
 There was implemented three quality checks were in the code:
 
     1. Ensure not null key values for the users' table
-    2.  Ensure not null key values for the time table
-    3.  Ensure not null key values for products table
+    2. Ensure not null key values for the time table
+    3. Ensure not null key values for products table
+    4. Unit tests to ensure all 151 product brands exist in the tables
+    5. Unit tests to ensure the 2 genders exist in the tables
+    6. Unit tests to ensure the event type is only the purchase type
     
 ## Data Dictionary
 
@@ -176,6 +179,7 @@ There are a few important arguments set for this job:
     - The database needed to be accessed by 100+ people.
 
         * Redshift is an MPP database that improves fast reads and also has a great cache that will highly enhance repetitive tasks.
+        * Data can be periodically copied to a NoSQL server such as Cassandra to improve reads when using simple queries
 
 ## References
 
