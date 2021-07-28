@@ -187,6 +187,10 @@ Finally, analysts or business users can query the star schema model to improve s
 
 <img src="images/test model.PNG">
 
+When looking at the Airflow UI, they can monitor and see how it is working in the tree view as shown here.
+
+<img src="images/dag results.PNG">
+
 ## References
 
 REES46. (2020, March). eCommerce Events History in Cosmetics Shop, Version 6. Retrieved July 28, 2021 from https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop.
