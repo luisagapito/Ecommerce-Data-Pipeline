@@ -81,6 +81,8 @@ This star schema was chosen because of its benefits:
     
     * Load performance and administration: Reduces the time required to load large amounts of data into tables
 
+
+
 ### Mapping Out Data Pipelines
 
 The Data pipelines consist of multiple steps:
@@ -103,9 +105,9 @@ It is built in the Airflow folder.
 
 There was implemented three quality checks were in the code:
 
-    1. Compare null key values for the users' table
-    2. Compare null key values for the time table
-    3. Compare null key values for products table
+    1. Ensure not null key values for the users' table
+    2.  Ensure not null key values for the time table
+    3.  Ensure not null key values for products table
     
 ## Data Dictionary
 
@@ -114,6 +116,23 @@ It is included a data dictionary with all fields in the star schema.
 <img src="images/data dictionary.png">
 
 ## Step 5: Run Pipelines to Model the Data
+
+### Steps of the Process
+
+The Airflow DAG has many steps with the following order:
+
+    1. It starts with a beginning task. 
+    2. It loads all 3 stage tables: products, customers, and events.
+    3. It loads the fact table called product sales. 
+    4. It loads the 3 dimensional tables.
+    5. It runs the quality test.
+    6. It ends with a stop execution task.
+
+<img src="images/DAG Airflow.png">
+
+There are a few important arguments set for this job:
+    a) It retries 3 times each 5 minutes, so we can ensure it is executing in case of brief unavailability of any software involved.
+    b) It is scheduled to run hourly because the events files are delivered hourly in the S3.
 
 ### Technology used and reasons
 
