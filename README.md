@@ -44,7 +44,8 @@ The data would come from 3 different sources:
     1. The CRM platform: It sends daily the file corp_customer.csv in CSV format, so it can have detailed data from current customers.
     2. The SAP platform: It sends daily the file corp_products.json in JSON format, so it can have detailed data from current products.
     3. Google Analytics: It sends events in year-month.csv with CSV format, so it can know what events are performed by each customer. It has more than one million rows.
-    
+
+**Note:** Original datasets come from the 3 Kaggle datasets cited in the references section.
     
 ## Step 2: Explore and Assess the Data
 
@@ -128,7 +129,7 @@ The Airflow DAG has many steps with the following order:
     5. It runs the quality tests.
     6. It ends with a stop execution task.
 
-<img src="images/airflow dag.png">
+<img src="images/airflow dag.PNG">
 
 There are a few important arguments set for this job:
 
@@ -175,3 +176,11 @@ There are a few important arguments set for this job:
     - The database needed to be accessed by 100+ people.
 
         * Redshift is an MPP database that improves fast reads and also has a great cache that will highly enhance repetitive tasks.
+
+## References
+
+REES46. (2020, March). eCommerce Events History in Cosmetics Shop, Version 6. Retrieved July 28, 2021 from https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop.
+
+MF Softworks. (2018, June). Cosmetic Products, Version 4. Retrieved July 28, 2021 from https://www.kaggle.com/mfsoftworks/cosmetic-products.
+
+BlastChar. (2018, February). Telco Customer Churn, Version 1. Retrieved July 28, 2021 from https://www.kaggle.com/blastchar/telco-customer-churn.
