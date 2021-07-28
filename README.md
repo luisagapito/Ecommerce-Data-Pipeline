@@ -44,7 +44,8 @@ The data would come from 3 different sources:
     1. The CRM platform: It sends daily the file corp_customer.csv in CSV format, so it can have detailed data from current customers.
     2. The SAP platform: It sends daily the file corp_products.json in JSON format, so it can have detailed data from current products.
     3. Google Analytics: It sends events in year-month.csv with CSV format, so it can know what events are performed by each customer. It has more than one million rows.
-    
+
+**Note:** Original datasets come from the 3 Kaggle datasets cited in the references section.
     
 ## Step 2: Explore and Assess the Data
 
@@ -178,11 +179,8 @@ There are a few important arguments set for this job:
 
 ## References
 
-@misc{kechinov2020arxiv,
-    title={eCommerce Events History in Cosmetics Shop},
-    author={Michael Kechinov},
-    year={2020},
-    eprint={1905.00075},
-    archivePrefix={arXiv},
-    primaryClass={cs.IR}
-}
+REES46. (2020, March). eCommerce Events History in Cosmetics Shop, Version 6. Retrieved July 28, 2021 from https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop.
+
+MF Softworks. (2018, June). Cosmetic Products, Version 4. Retrieved July 28, 2021 from https://www.kaggle.com/mfsoftworks/cosmetic-products.
+
+BlastChar. (2018, February). Telco Customer Churn, Version 1. Retrieved July 28, 2021 from https://www.kaggle.com/blastchar/telco-customer-churn.
