@@ -131,7 +131,9 @@ The Airflow DAG has many steps with the following order:
 <img src="images/DAG Airflow.PNG">
 
 There are a few important arguments set for this job:
+
     a) It retries 3 times each 5 minutes, so we can ensure it is executing in case of brief unavailability of any software involved.
+    
     b) It is scheduled to run hourly because the events files are delivered hourly in the S3.
 
 ### Technology used and reasons
