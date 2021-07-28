@@ -128,7 +128,7 @@ The Airflow DAG has many steps with the following order:
     5. It runs the quality test.
     6. It ends with a stop execution task.
 
-<img src="images/DAG Airflow.png">
+<img src="images/DAG Airflow.PNG">
 
 There are a few important arguments set for this job:
     a) It retries 3 times each 5 minutes, so we can ensure it is executing in case of brief unavailability of any software involved.
