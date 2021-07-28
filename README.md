@@ -181,6 +181,12 @@ There are a few important arguments set for this job:
         * Redshift is an MPP database that improves fast reads and also has a great cache that will highly enhance repetitive tasks.
         * Data can be periodically copied to a NoSQL server such as Cassandra to improve reads when using simple queries
 
+### Results evidence
+
+Finally, analysts or business users can query the star schema model to improve sales of the eCommerce business. One of the possible queries they can execute is to find the sales by year, gender, and products as shown in the following image.
+
+<img src="images/test model.PNG">
+
 ## References
 
 REES46. (2020, March). eCommerce Events History in Cosmetics Shop, Version 6. Retrieved July 28, 2021 from https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop.
