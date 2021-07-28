@@ -128,7 +128,7 @@ The Airflow DAG has many steps with the following order:
     5. It runs the quality tests.
     6. It ends with a stop execution task.
 
-<img src="images/airflow dag.png">
+<img src="images/airflow dag.PNG">
 
 There are a few important arguments set for this job:
 
