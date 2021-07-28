@@ -52,14 +52,15 @@ The data would come from 3 different sources:
 
 There were found a few quality issues exploring these three datasets:
 
-    * Products Dataset: Fields price, rating y view_count are empty
+    * Products Dataset: Fields price, rating y view_count are empty. The product type has spaces before and after the word.
     * Event dataset: Most of the category codes are empty
     * Customer dataset: It combines 1-0 and true-false statements for boolean fields. 
     
 ### Cleaning Steps
 
-    * Products Dataset: Fields price, rating y view_count are empty
+    * Products Dataset: Fields price, rating y view_count are empty. The product type has spaces before and after the word.
         a) Drop empty columns
+        b) Trim the spaces in the product type
     * Event dataset: Most of the category codes are empty
         a) Drop category code column
     * Customer dataset: It combines 1-0 and true-false statements for boolean fields. 
