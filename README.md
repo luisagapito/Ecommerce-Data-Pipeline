@@ -125,7 +125,7 @@ The Airflow DAG has many steps with the following order:
     2. It loads all 3 stage tables: products, customers, and events.
     3. It loads the fact table called product sales. 
     4. It loads the 3 dimensional tables.
-    5. It runs the quality test.
+    5. It runs the quality tests.
     6. It ends with a stop execution task.
 
 <img src="images/DAG Airflow.PNG">
