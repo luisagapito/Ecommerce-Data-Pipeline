@@ -175,3 +175,14 @@ There are a few important arguments set for this job:
     - The database needed to be accessed by 100+ people.
 
         * Redshift is an MPP database that improves fast reads and also has a great cache that will highly enhance repetitive tasks.
+
+## References
+
+@misc{kechinov2020arxiv,
+    title={eCommerce Events History in Cosmetics Shop},
+    author={Michael Kechinov},
+    year={2020},
+    eprint={1905.00075},
+    archivePrefix={arXiv},
+    primaryClass={cs.IR}
+}
